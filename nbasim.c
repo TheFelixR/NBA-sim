@@ -35,9 +35,9 @@ int main(void)
                                   "Dallas Mavericks", "Houston Rockets", "Memphis Grizzlies", "New Orleans Pelicans", "San Antonio Spurs"};
      
     // how many games do you want to be played? 
-    int nbagames = 0;
+    int nbagames = 10;
                                  
-    while(nbagames < 10)
+    while(nbagames != 0)
     {
         // gets the first team and generates a score for it
         struct gameday team1;
@@ -80,7 +80,7 @@ int main(void)
         }
         printf("\n");
         // increment the nba games played.
-        nbagames++;
+        nbagames--;
     }
 }
 // get psudorandom score based on the time and the leanght of the team name.
